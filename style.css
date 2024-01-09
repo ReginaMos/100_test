@@ -1,0 +1,148 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+      box-sizing: border-box;
+}
+  
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.header-img {
+    padding-bottom: 62px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 67px;
+}
+
+.service-item {
+    position: relative;
+}
+
+.service-text {
+    position: absolute;
+    top: 298px;
+    left: 30px;
+
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0px 15px 80px rgba(0, 0, 0, 0.08);
+}
+
+.service-part {
+    padding-left: 15px;
+    padding-right: 67px;
+}
+
+.item-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service-part p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.service-link {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+    text-decoration: none;
+    color: #EC5598;
+    background-color: #fff;
+    padding: 0 15px 20px 203px;
+}
+
+.service-link:before {
+    position: absolute;
+    content: '';
+    height: 1.5px;
+    width: 46px;
+    background-color: #EC5598;
+    top: 116px;
+    left: 153px;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #FF427F;
+    background-color: #fff;
+    border-color: #FF427F;
+    padding: 18px 46px;
+
+    margin-top: 100px;
+    margin-bottom: 55px;    
+}
+
+@media(max-width:420px){
+    .container {
+        max-width: 330px;
+    }
+    
+    .header-title {
+        font-size: 28px;
+    }
+
+    .header-img {
+        padding-bottom: 50px;
+    }
+
+    .service-item {
+        margin-bottom: 90px;
+    }
+
+    .services {
+        display: block;
+        justify-content: center;
+    }
+
+    .service-text {
+        right: 30px;
+        left: 0;
+
+        box-shadow: 15px 0px 80px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-part {
+        padding-left: 18px;
+        padding-right: 64px;
+    }
+
+    .btn {
+        margin-top: -10px;
+        margin-bottom: 15px; 
+    }
+}
